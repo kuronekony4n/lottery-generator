@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lottery Number Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>(100% Legit) Lottery Number Generator</h1>
+        <input type="text" id="name" placeholder="Who's Buying?">
+        <input type="number" id="howMany" placeholder="How many tickets?">
+        Ticket Digits: <input type="number" id="totalDigits" placeholder="Total Digits (Default: 4)" value="4">
+        <br>
+        <div class="flex">
+            <button id="generateButton">Generate</button>
+            <button id="newLotteryButton">Start New Lottery</button>
+        </div><br>
+        <h3>Generated Numbers:</h3>
+        <input type="text" id="searchInput" placeholder="Search Winner... (Winning Number)">
+        <ul id="numberList"></ul>
+        <div class="credit">
+            <a href="#" id="aboutLink">IMPORTANT</a> -
+            <a href="https://github.com/kuronekony4n/lottery-generator/" target="_blank">Source Code</a> -
+            <a href="https://read.cv/0w" target="_blank">by 0willy</a> <br>
+        </div>
+    </div>
+
+    <div id="aboutDialog" class="dialog">
+        <div class="dialog-content">
+            <h2>(100% Legit) Lottery Number Generator</h2>
+            <p>This lottery number generator ensures fairness by producing unique, <br>non-repeating numbers with the
+                selected number of digits. <br><br> For example, if you choose 3 digits, you'll get 3-digit numbers
+                where no
+                digit repeats (like 253, not 113). <br>This means there are many more possible numbers with larger digit
+                counts! <br><br>Think of it this way: with 3 digits, there are 648 possible unique numbers, <br>but with
+                4 digits, there are 5,040 possible unique numbers! <br>
+                <br>
+                I recommend using 4 or more digits for the tickets.
+                <br><br>
+                The data is saved on your browser, so it safe to reload.<br>
+                This site has no server and all the processing and calculation is done on the client browser. <br><br> I
+                don't log or save any kind of data from the visitors, <br>you can check the
+                source code and make a copy of this website yourselves if you want.
+            </p>
+            <button id="closeDialog">Close</button>
+        </div>
+    </div>
+
+    <script>
+        const aboutLink = document.getElementById('aboutLink');
+        const aboutDialog = document.getElementById('aboutDialog');
+        const closeDialog = document.getElementById('closeDialog');
+
+        aboutLink.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            aboutDialog.style.display = 'block';
+        });
+
+        closeDialog.addEventListener('click', () => {
+            aboutDialog.style.display = 'none';
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

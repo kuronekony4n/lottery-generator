@@ -1,0 +1,177 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Ensure the body takes up full viewport height */
+    background-color: #f0f0f0;
+}
+
+#container {
+    width: 400px;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    width: 100%;
+}
+
+h3 {
+    margin: 0px 0px;
+}
+
+/* Input fields on the same line */
+.input-group {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    flex: 1;
+    /* Allow inputs to take equal width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-group input:first-child {
+    margin-right: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Add a smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #45a049;
+    /* Slightly darker green on hover */
+}
+
+#newLotteryButton {
+    flex: 1;
+    background-color: #f44336;
+    /* Red color for new lottery button */
+}
+
+#newLotteryButton:hover {
+    background-color: #d32d1f;
+    /* Darker red on hover */
+}
+
+#name, #howMany {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 5px 0px;
+}
+
+#totalDigits {
+    max-width: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.flex {
+    display: flex;
+    gap: 5px;
+}
+
+.nameDrawn {
+    text-transform: capitalize;
+}
+
+.numberDrawn {
+    display: inline;
+    color: #585858;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0px;
+}
+
+li {
+    margin-bottom: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ... Your existing styles ... */
+
+.dialog {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#closeDialog {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #8196f6
+}
+
+.credit {
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #333;
+    font-weight: bold;
+}
